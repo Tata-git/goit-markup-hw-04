@@ -129,6 +129,10 @@ body {
 .site-nav-link {
   color: var(--primary-text-color);
 }
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
 
 /* SITE CONTACTS*/
 .site-contacts {
@@ -165,11 +169,12 @@ body {
 }
 .icon-header {
   margin-right: 10px;
-}
+  fill: currentColor;
+}/*
 .icon-header:hover,
 .icon-header:focus {
   fill: var(--accent-color);
-}
+}*/
 /*===========END HEADER==========*/
 /*===========HERO==========*/
 .hero {
@@ -261,7 +266,9 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 }
 .fs-icon-bcgr {
   display: flex;
-  padding: 25px 100px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   /*outline: 1px solid red;*/
   background-color:  var(--secondary-background);
@@ -319,6 +326,7 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   color: var(--primary-text-color);
 }
 .our-team-function {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
@@ -363,11 +371,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 .team-social-bcgr:focus {
   background-color: var(--accent-color);
 }
-.team-social {
-fill: #AFB1B8;
-}
-.team-social:hover,
-.team-social:focus {
+.team-social-bcgr:hover .team-social,
+.team-social-bcgr:focus .team-social {
   fill: var(--white-text-color);
 }
 .team-social-list {
@@ -403,14 +408,13 @@ color: var(--primary-text-color)
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   box-sizing: border-box;
-  fill: #afb1b8;
 }
 .clients-icon:hover,
 .clients-icon:focus {
   border: 1px solid var(--accent-color);
 }
-.clients-logo-icon:hover,
-.clients-logo-icon:focus {
+.clients-icon:hover .clients-logo-icon,
+.clients-icon:focus .clients-logo-icon {
   fill: var(--accent-color);
 }
 /*===========END OUR CLIENTS==========*/
@@ -426,6 +430,9 @@ color: var(--primary-text-color)
 }
 .footer-list .footer-item + .footer-item {
   margin-top: 9px;
+}
+.footer-item {
+  margin-top: 20px;
 }
 .page-footer {
   display: flex;
