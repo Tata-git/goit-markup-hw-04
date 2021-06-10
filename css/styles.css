@@ -402,8 +402,6 @@ color: var(--primary-text-color)
   width: 170px;
   height: 92px;
  /* outline: 1px solid tomato;*/
-  display: inline-block;
-  padding: 16px 32px;
 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
